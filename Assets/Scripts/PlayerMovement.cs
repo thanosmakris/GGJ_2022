@@ -1,19 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public float speed;
     public float rotationSpeed;
     public Transform rotationParent;
-    
-
-    void Start()
-    {
-        
-    }
 
 
     void Update()
@@ -21,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
         Movement();
         Rotation();
     }
+
 
     void Movement()
     {
@@ -30,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
         transform.position += direction * speed;
     }
+
 
     void Rotation()
     {
