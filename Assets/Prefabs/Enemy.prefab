@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  dieParticles: {fileID: 5791362342083861084, guid: b5ee4ca18d54fa04db0f184f19fd6800, type: 3}
 --- !u!54 &3536248785995234596
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,30 +1,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShooting : Player
+public class PlayerShooting : MonoBehaviour
 {
     public GameObject weaponPrefab;
     public GameObject bulletPrefab;
-    public Transform[] weaponSlots;
     Transform weaponTransform;
-    Transform activeSlot;
-    Queue<Transform> slotsQueue = new Queue<Transform>();
+    PlayerHand activeHand;
+    Queue<PlayerHand> slotsQueue = new Queue<PlayerHand>();
+
+    public PlayerHand happyHand = new PlayerHand();
+    public PlayerHand angryHand = new PlayerHand();
 
 
     private void OnEnable() {
-        slotsQueue.Enqueue(weaponSlots[0]);
-        slotsQueue.Enqueue(weaponSlots[1]);
+        slotsQueue.Enqueue(happyHand);
+        slotsQueue.Enqueue(angryHand);
     }
 
 
     void Start()
     {
-        activeSlot = slotsQueue.Dequeue();
-        slotsQueue.Enqueue(activeSlot);
+        
 
-        GameObject weaponInstance = Instantiate(weaponPrefab, activeSlot.position, Quaternion.identity);
+
+        activeHand = slotsQueue.Dequeue();
+        slotsQueue.Enqueue(activeHand);
+
+        GameObject weaponInstance = Instantiate(weaponPrefab, activeHand.pos.position, Quaternion.identity);
         weaponTransform = weaponInstance.transform;
-        weaponTransform.parent = activeSlot;
+        weaponTransform.parent = activeHand.pos;
     }
 
 
@@ -39,10 +44,10 @@ public class PlayerShooting : Player
     {
         if (Input.GetMouseButtonDown(1))
         {
-            activeSlot = slotsQueue.Dequeue();
-            slotsQueue.Enqueue(activeSlot);
-            weaponTransform.position = activeSlot.position;
-            weaponTransform.parent = activeSlot;
+            activeHand = slotsQueue.Dequeue();
+            slotsQueue.Enqueue(activeHand);
+            weaponTransform.position = activeHand.pos.position;
+            weaponTransform.parent = activeHand.pos;
         }
     }
 
@@ -51,12 +56,18 @@ public class PlayerShooting : Player
         if (Input.GetMouseButtonDown(0))
         {
 
-            GameObject newBullet = Instantiate(bulletPrefab, activeSlot.position, Quaternion.identity);
-            newBullet.GetComponent<Bullet>().direction = activeSlot.forward;
+            GameObject newBullet = Instantiate(bulletPrefab, activeHand.pos.position, Quaternion.identity);
+            int randomNum = Random.Range(0,2);
+            State newState = randomNum == 0 ? State.Happy : State.Angry;
+            newBullet.GetComponent<Bullet>().SetupBullet(newState, activeHand.pos.forward);
         }
     }
+}
 
-    private void OnDrawGizmosSelected() {
-        Gizmos.DrawRay(weaponSlots[0].position, weaponSlots[0].forward);
-    }
+
+[System.Serializable]
+public class PlayerHand
+{
+    public Transform pos;
+    public State state;
 }

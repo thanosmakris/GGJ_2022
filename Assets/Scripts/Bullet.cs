@@ -3,7 +3,15 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed;
-    [HideInInspector] public Vector3 direction = Vector3.zero;
+    Vector3 direction = Vector3.zero;
+
+    State bulletType;
+
+    public void SetupBullet(State bulletType, Vector3 direction)
+    {
+        this.bulletType = bulletType;
+        this.direction = direction;
+    }
 
     private void Start() {
         Invoke("SelfDestroy", 5f);
@@ -20,7 +28,7 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.transform.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            other.transform.GetComponent<Enemy>().Die();
         }
     }
 
