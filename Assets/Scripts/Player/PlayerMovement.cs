@@ -6,6 +6,16 @@ public class PlayerMovement : MonoBehaviour
     public float rotationSpeed;
     public Transform rotationParent;
 
+    public LayerMask whatIsGround;
+
+    public Camera mainCam;
+
+    public Rigidbody rb;
+
+    private void Awake() {
+        mainCam = Camera.main;
+    }
+
 
     void Update()
     {
@@ -16,24 +26,42 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        float hor = Input.GetAxis("Horizontal") * Time.deltaTime;
-        float ver = Input.GetAxis("Vertical") * Time.deltaTime;
+        float hor = Input.GetAxisRaw("Horizontal");
+        float ver = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(hor, 0f, ver);
 
-        transform.position += direction * speed;
+        transform.position += direction * speed * Time.deltaTime;
     }
 
 
+    public float offset;
     void Rotation()
     {
-        if (Input.GetKey(KeyCode.Q)) // rotate LEFT
+        Vector3 mousePosIn3D;
+        Ray ray = mainCam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit, whatIsGround))
         {
-            rotationParent.Rotate(Vector3.up * Time.deltaTime * -rotationSpeed);
+            mousePosIn3D = hit.point;
         }
+        else
+        {
+            mousePosIn3D = Vector3.zero;
+        }
+        Vector3 lookDir = mousePosIn3D - transform.position;
+        float angle = Mathf.Atan2(lookDir.x, lookDir.z) * Mathf.Rad2Deg + offset;
 
-        else if (Input.GetKey(KeyCode.E)) // rotate RIGHT
-        {
-            rotationParent.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
-        }
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+
+
+        // if (Input.GetKey(KeyCode.Q)) // rotate LEFT
+        // {
+        //     rotationParent.Rotate(Vector3.up * Time.deltaTime * -rotationSpeed);
+        // }
+
+        // else if (Input.GetKey(KeyCode.E)) // rotate RIGHT
+        // {
+        //     rotationParent.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
+        // }
     }
 }

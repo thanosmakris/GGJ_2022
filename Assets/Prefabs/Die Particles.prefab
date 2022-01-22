@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3660488044496118829}
   - component: {fileID: 6078939264598700704}
   - component: {fileID: 7123719460007668065}
+  - component: {fileID: 6445505597548032989}
   m_Layer: 0
   m_Name: Die Particles
   m_TagString: Untagged
@@ -4870,3 +4871,15 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &6445505597548032989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5791362342083861084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8697e7e8b1640d44b254bce27e3b735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

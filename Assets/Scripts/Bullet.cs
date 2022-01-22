@@ -3,8 +3,8 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float speed;
+    public GameObject puffParticles;
     Vector3 direction = Vector3.zero;
-
 
     State bulletType;
 
@@ -40,6 +40,11 @@ public class Bullet : MonoBehaviour
         if (other.transform.CompareTag("Enemy"))
         {
             other.transform.GetComponent<Enemy>().HandleBulletCollision(bulletType);
+        }
+        else
+        {
+            Instantiate(puffParticles, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 

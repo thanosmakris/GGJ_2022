@@ -15,7 +15,7 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(2, 5));
+            yield return new WaitForSeconds(Random.Range(1f, 2f));
             SpawnEnemy();
         }
     }
