@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
     public float speed;
-    public GameObject dieParticles;
+    public GameObject dieParticles, puffParticles;
     Transform target;
     State enemyType;
 
@@ -27,11 +25,11 @@ public class Enemy : MonoBehaviour
     {
         if (enemyType == State.Happy)
         {
-            GetComponent<MeshRenderer>().material.color = Color.red;
+            GetComponent<MeshRenderer>().material.SetFloat("_T", 0f);
         }
         else
         {
-            GetComponent<MeshRenderer>().material.color = Color.blue;
+            GetComponent<MeshRenderer>().material.SetFloat("_T", 1f);
         }
     }
 
@@ -40,9 +38,18 @@ public class Enemy : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
     }
 
-    public void Die()
+    public void HandleBulletCollision(State bulletType)
     {
-        Instantiate(dieParticles, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        if (bulletType == enemyType)
+        {
+            GameEvents.onEnemyKilled?.Invoke();
+            Instantiate(dieParticles, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+
+        }
+        else
+        {
+            Instantiate(puffParticles, transform.position, Quaternion.identity);
+        }
     }
 }

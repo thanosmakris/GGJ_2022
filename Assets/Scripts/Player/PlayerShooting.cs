@@ -21,9 +21,6 @@ public class PlayerShooting : MonoBehaviour
 
     void Start()
     {
-        
-
-
         activeHand = slotsQueue.Dequeue();
         slotsQueue.Enqueue(activeHand);
 
@@ -58,7 +55,7 @@ public class PlayerShooting : MonoBehaviour
 
             GameObject newBullet = Instantiate(bulletPrefab, activeHand.pos.position, Quaternion.identity);
             int randomNum = Random.Range(0,2);
-            State newState = randomNum == 0 ? State.Happy : State.Angry;
+            State newState = activeHand.state;
             newBullet.GetComponent<Bullet>().SetupBullet(newState, activeHand.pos.forward);
         }
     }
