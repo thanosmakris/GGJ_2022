@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(0);
+            RestartGame();
         }
 
     }
@@ -41,6 +41,11 @@ public class GameManager : MonoBehaviour
             int randomNumber = Random.Range(0, 2);
             return randomNumber == 0 ? happyPlayer : angryPlayer;
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
     }
 
 

@@ -16,10 +16,17 @@ public class PlayerShooting : MonoBehaviour
 
     State currentState;
 
+    bool canShoot = true;
+
 
     private void OnEnable() {
         slotsQueue.Enqueue(happyHand);
         slotsQueue.Enqueue(angryHand);
+        GameEvents.onPlayerDied += () => canShoot = false;
+    }
+
+    private void OnDisable() {
+        GameEvents.onPlayerDied -= () => canShoot = false;
     }
 
 
@@ -38,8 +45,11 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
-        SwapPositions();
-        Fire();
+        if (canShoot)
+        {
+            SwapPositions();
+            Fire();
+        }
     }
 
 

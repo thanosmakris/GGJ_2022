@@ -3,29 +3,31 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource happySource, angrySource, sfxSource;
-    public AudioClip happyFireSFX, angryFireSfx, enemyKillSfx, weaponSwitchSfx;
+    public AudioClip happyFireSFX, angryFireSfx, enemyKillSfx, weaponSwitchSfx, playerDeathSfx, warningSfx;
 
     private void OnEnable() {
         GameEvents.onStateChanged += SwitchSource;
         GameEvents.onEnemyKilled += PlayEnemyKillSound;
+        GameEvents.onPlayerDied += PlayPlayerDeathSound;
     }
 
     private void OnDisable() {
         GameEvents.onStateChanged -= SwitchSource;
         GameEvents.onEnemyKilled -= PlayEnemyKillSound;
+        GameEvents.onPlayerDied -= PlayPlayerDeathSound;
     }
+
+    public void PlayPlayerDeathSound()
+    {
+        sfxSource.PlayOneShot(playerDeathSfx);
+    }
+
+    public void PlayWarningSfx() => sfxSource.PlayOneShot(warningSfx);
 
 
     public void PlayFireSound(State state)
     {
-        if (state == State.Happy)
-        {
-            sfxSource.PlayOneShot(happyFireSFX);
-        }
-        else
-        {
-            sfxSource.PlayOneShot(angryFireSfx);
-        }
+        sfxSource.PlayOneShot(happyFireSFX, 0.4f);
     }
 
     void PlayEnemyKillSound()
@@ -41,11 +43,11 @@ public class AudioManager : MonoBehaviour
         if (activeState == State.Happy)
         {
             angrySource.mute = true;
-            happySource.mute = false;
+            //happySource.mute = false;
         }
         else
         {
-            happySource.mute = true;
+            //happySource.mute = true;
             angrySource.mute = false;
         }
     }
