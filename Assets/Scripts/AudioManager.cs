@@ -3,16 +3,16 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource happySource, angrySource, sfxSource;
-    public AudioClip happyFireSFX, angryFireSfx, enemyKillSfx, weaponSwitchSfx, playerDeathSfx, warningSfx;
+    public AudioClip happyFireSFX, angryFireSfx, enemyKillSfx, weaponSwitchSfx, playerDeathSfx, warningSfx, shieldSfx;
 
     private void OnEnable() {
-        GameEvents.onStateChanged += SwitchSource;
+        GameEvents.onStateChanged += PlayWeaponSwitch;
         GameEvents.onEnemyKilled += PlayEnemyKillSound;
         GameEvents.onPlayerDied += PlayPlayerDeathSound;
     }
 
     private void OnDisable() {
-        GameEvents.onStateChanged -= SwitchSource;
+        GameEvents.onStateChanged -= PlayWeaponSwitch;
         GameEvents.onEnemyKilled -= PlayEnemyKillSound;
         GameEvents.onPlayerDied -= PlayPlayerDeathSound;
     }
@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayWarningSfx() => sfxSource.PlayOneShot(warningSfx);
+     public void PlayShieldSfx() => sfxSource.PlayOneShot(shieldSfx);
 
 
     public void PlayFireSound(State state)
@@ -35,21 +36,24 @@ public class AudioManager : MonoBehaviour
         sfxSource.PlayOneShot(enemyKillSfx);
     }
 
+    void PlayWeaponSwitch(State state) => sfxSource.PlayOneShot(weaponSwitchSfx);
+
     
 
-    void SwitchSource(State activeState)
-    {
-        sfxSource.PlayOneShot(weaponSwitchSfx);
-        if (activeState == State.Happy)
-        {
-            angrySource.mute = true;
-            //happySource.mute = false;
-        }
-        else
-        {
-            //happySource.mute = true;
-            angrySource.mute = false;
-        }
-    }
+    // void SwitchSource(State activeState)
+    // {
+    //     sfxSource.PlayOneShot(weaponSwitchSfx);
+    //     if (activeState == State.Happy)
+    //     {
+    //         angrySource.mute = true;
+    //         //happySource.mute = false;
+    //     }
+
+    //     else
+    //     {
+    //         //happySource.mute = true;
+    //         angrySource.mute = false;
+    //     }
+    // }
 
 }

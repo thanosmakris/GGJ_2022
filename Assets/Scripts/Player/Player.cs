@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
     public GameObject dieParticles;
     public GameObject player1, player2;
 
+    public GameObject shieldObj;
+
+    bool hasShield = false;
+
     private void OnEnable() {
         GameEvents.onPlayerDied += Death;
     }
@@ -28,8 +32,20 @@ public class Player : MonoBehaviour
         {
             if (!isDead)
             {
+                if (hasShield)
+                {
+                    hasShield = false;
+                    shieldObj.SetActive(false);
+                    return;
+                }
                 GameEvents.onPlayerDied?.Invoke();
             }
+        }
+        if (other.transform.CompareTag("Shield"))
+        {
+            hasShield = true;
+            shieldObj.SetActive(true);
+            other.transform.GetComponent<Shield>().GatheredByPlayer();
         }
     }
 
