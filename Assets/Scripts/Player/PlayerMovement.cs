@@ -3,14 +3,11 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    public float rotationSpeed;
-    public Transform rotationParent;
 
     public LayerMask whatIsGround;
 
     public Camera mainCam;
 
-    public Rigidbody rb;
 
     private void Awake() {
         mainCam = Camera.main;
@@ -51,17 +48,5 @@ public class PlayerMovement : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.x, lookDir.z) * Mathf.Rad2Deg + offset;
 
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-
-
-        // if (Input.GetKey(KeyCode.Q)) // rotate LEFT
-        // {
-        //     rotationParent.Rotate(Vector3.up * Time.deltaTime * -rotationSpeed);
-        // }
-
-        // else if (Input.GetKey(KeyCode.E)) // rotate RIGHT
-        // {
-        //     rotationParent.Rotate(Vector3.up * Time.deltaTime * rotationSpeed);
-        // }
     }
 }

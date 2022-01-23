@@ -1,0 +1,470 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.6f1 (8c4e826ba445) revision 9195138'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'en' Physical Memory: 32104 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/Thanos/Desktop/UnityProjects/GGJ_2022
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+50825
+Successfully changed project path to: C:/Users/Thanos/Desktop/UnityProjects/GGJ_2022
+C:/Users/Thanos/Desktop/UnityProjects/GGJ_2022
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 94.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.2.6f1 (8c4e826ba445)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Thanos/Desktop/UnityProjects/GGJ_2022/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x24dd)
+    Vendor:   NVIDIA
+    VRAM:     8044 MB
+    Driver:   27.21.14.6685
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006159 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 90.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.547 seconds
+Domain Reload Profiling:
+	ReloadAssembly (548ms)
+		BeginReloadAssembly (73ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (408ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (80ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (118ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008250 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Thanos\Desktop\UnityProjects\GGJ_2022\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Thanos\Desktop\UnityProjects\GGJ_2022\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 92.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.522 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1523ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1346ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (940ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (657ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5132 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (0.7 MB). Loaded Objects now: 5590.
+Memory consumption went from 204.0 MB to 203.3 MB.
+Total: 5.680400 ms (FindLiveObjects: 0.436300 ms CreateObjectMapping: 0.245900 ms MarkObjects: 4.544100 ms  DeleteObjects: 0.452600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 788255.391050 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Hit and Punch Preview/AUDIO/HIT_SHORT_04.wav
+  artifactKey: Guid(673e0c563e49943e983f44f0fb941436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Hit and Punch Preview/AUDIO/HIT_SHORT_04.wav using Guid(673e0c563e49943e983f44f0fb941436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7dbc5f11740fa0db8fd52192a652c05') in 0.117698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Hit and Punch Preview/AUDIO/PUNCH_DESIGNED_HEAVY_23.wav
+  artifactKey: Guid(d14d9281a9cf64901b5ed891b5eb7069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Hit and Punch Preview/AUDIO/PUNCH_DESIGNED_HEAVY_23.wav using Guid(d14d9281a9cf64901b5ed891b5eb7069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34be2c6e2f931d04820cf920b341e867') in 0.055756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.427890 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/BLLTBy_Bullet By Centred Fast_02.wav
+  artifactKey: Guid(feaaec11b7c20462eb6660365bbeb1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/BLLTBy_Bullet By Centred Fast_02.wav using Guid(feaaec11b7c20462eb6660365bbeb1ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d08f2095ed03ad7c0fab22fb57b2ba') in 0.015608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Plasma Rifle Fire_03.wav
+  artifactKey: Guid(df0e60887b63f45c7801a38fccae1f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Plasma Rifle Fire_03.wav using Guid(df0e60887b63f45c7801a38fccae1f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf811486bb274c34a7346c5b0680cca0') in 0.023026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/MECHClik_Mine Deploy_02.wav
+  artifactKey: Guid(2bd37df2fb96f4d978c1f706701ce87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/MECHClik_Mine Deploy_02.wav using Guid(2bd37df2fb96f4d978c1f706701ce87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7e74fb29976e4ec29e668d0d0b49fb') in 0.015489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/MOTRSrvo_Plasma Rifle Arm_01.wav
+  artifactKey: Guid(006910ae2cc6e426c9797a60920c1243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/MOTRSrvo_Plasma Rifle Arm_01.wav using Guid(006910ae2cc6e426c9797a60920c1243) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f7a76a008efad612d0f5c11f113cf1') in 0.013146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GUNMech_Mechanical_12.wav
+  artifactKey: Guid(80a62d8ae89f646d49b3e89cba4e5822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GUNMech_Mechanical_12.wav using Guid(80a62d8ae89f646d49b3e89cba4e5822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb98819f070946de4c25620a789983b') in 0.014545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Plasma Rifle Bullet Stream_02.wav
+  artifactKey: Guid(1af371c55ce7f481192cb3b75db41e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Plasma Rifle Bullet Stream_02.wav using Guid(1af371c55ce7f481192cb3b75db41e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987eea936170b28733c69e2073d7946c') in 0.013504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GUNSupr_Silenced Pistol Fire Short_01.wav
+  artifactKey: Guid(67ff0f1f4f6f24ad5ac07ccfd34636fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GUNSupr_Silenced Pistol Fire Short_01.wav using Guid(67ff0f1f4f6f24ad5ac07ccfd34636fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47db7bbb2e9a8eb3cfb1c55b6ba2906') in 0.012346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Classic Blaster A Fire_03.wav
+  artifactKey: Guid(16c25250151e04a37b489a3f056c8314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Classic Blaster A Fire_03.wav using Guid(16c25250151e04a37b489a3f056c8314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '933b6259f2e6532414d518a65779ca70') in 0.014523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GORESplt_Giblet Splatter_02.wav
+  artifactKey: Guid(e2ef13590109348d19c2566f7381c2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GORESplt_Giblet Splatter_02.wav using Guid(e2ef13590109348d19c2566f7381c2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc7c39150f0f33ea2cff55ea44865dd6') in 0.013595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LIQImpt_Goo Splatter_09.wav
+  artifactKey: Guid(a245ac773194142cfa12c21de3e0980b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LIQImpt_Goo Splatter_09.wav using Guid(a245ac773194142cfa12c21de3e0980b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d7f4f940a964a5ccfc69086434c8450') in 0.015850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GUNAuto_RPU Mk2 Burst_04.wav
+  artifactKey: Guid(eafb9188574084c7cadfd6108975cf13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/GUNAuto_RPU Mk2 Burst_04.wav using Guid(eafb9188574084c7cadfd6108975cf13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4c041244a511df58dc2a396e21389c') in 0.014943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Ion Pistol C Burst_02.wav
+  artifactKey: Guid(eaaec473bb45349d991515330257e71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/LASRGun_Ion Pistol C Burst_02.wav using Guid(eaaec473bb45349d991515330257e71a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ffbaed416c4cebaafc41cf7c593bad1') in 0.013730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.096441 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/UIGlitch_Error Tone_03.wav
+  artifactKey: Guid(16458abe8d5a64f7a8082f0de46d643f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Sci Fi Weapons Cyberpunk Arsenal Preview/AUDIO/UIGlitch_Error Tone_03.wav using Guid(16458abe8d5a64f7a8082f0de46d643f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69603ec9f96c480156a8b6b994953601') in 0.017766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.064056 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coin Dropped on Wood Rattle.wav
+  artifactKey: Guid(44ec0024decd141b8b8de268b2689761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coin Dropped on Wood Rattle.wav using Guid(44ec0024decd141b8b8de268b2689761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9b73afb7422623ccc2b423b45063811') in 0.017252 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Wallet Close.wav
+  artifactKey: Guid(c976abc5f77b045bc9354060d8baec2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Wallet Close.wav using Guid(c976abc5f77b045bc9354060d8baec2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0378a878bf8ffed73acf94b04523abd2') in 0.014236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coins In Sack Dropped on Wood.wav
+  artifactKey: Guid(673c02d2180274f03b7d61e5780ad2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coins In Sack Dropped on Wood.wav using Guid(673c02d2180274f03b7d61e5780ad2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2e4fa7bda7c9265f7f18539ab61554') in 0.014739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coin Slid Along Wood.wav
+  artifactKey: Guid(b21add37a269f440a809ad24ac4fa79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/The Mint – Coins and Money Preview/AUDIO/Coin Slid Along Wood.wav using Guid(b21add37a269f440a809ad24ac4fa79f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd443fa5cbcbff12524847443646add70') in 0.014770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.944847 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/BUTTON_STOP_02.wav
+  artifactKey: Guid(060176aecd6b941e39640bb46e99df1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/BUTTON_STOP_02.wav using Guid(060176aecd6b941e39640bb46e99df1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4825f641ad80fc8acdae1538ea71fd05') in 0.017455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/SLOW DOWN SPEED UP_05.wav
+  artifactKey: Guid(4872c3adf623846bd9f78507d9690a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/SLOW DOWN SPEED UP_05.wav using Guid(4872c3adf623846bd9f78507d9690a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc46990fef31b35360c8f9756df1659a') in 0.013100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/REWIND_FAST_FORWARD_09.wav
+  artifactKey: Guid(d8e27b2312aff4681875d54cadb4820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/REWIND_FAST_FORWARD_09.wav using Guid(d8e27b2312aff4681875d54cadb4820a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b1475a66178efa22553d4e0826ad41c') in 0.013011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/LOOP_01.wav
+  artifactKey: Guid(1d2f819522b894766ac9c4323f9d79ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Cassette Preview/AUDIO/LOOP_01.wav using Guid(1d2f819522b894766ac9c4323f9d79ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf22171142b3f5ab2e270873fc6887c3') in 0.013959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.237145 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Dystopia – Ambience and Drone Preview/AUDIO/AMBIENCE_TUNDRA_LOOP_01.wav
+  artifactKey: Guid(3220df8b4a4e241b9b1833cd386bfe98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Dystopia – Ambience and Drone Preview/AUDIO/AMBIENCE_TUNDRA_LOOP_01.wav using Guid(3220df8b4a4e241b9b1833cd386bfe98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd133b37cb31a755ee7408d1c481307') in 0.014141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Dystopia – Ambience and Drone Preview/AUDIO/ONE_SHOT_CINEMATIC_EFFECT_10.wav
+  artifactKey: Guid(149caefbcaf1d4cefaad17d5e77a3b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Dystopia – Ambience and Drone Preview/AUDIO/ONE_SHOT_CINEMATIC_EFFECT_10.wav using Guid(149caefbcaf1d4cefaad17d5e77a3b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b04323060cc06204f693663d870482') in 0.015130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Dystopia – Ambience and Drone Preview/AUDIO/AMBIENCE_TUNNEL_WIND_LOOP.wav
+  artifactKey: Guid(f2183a39c3aa24cb9b21f5e581adaf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Dystopia – Ambience and Drone Preview/AUDIO/AMBIENCE_TUNNEL_WIND_LOOP.wav using Guid(f2183a39c3aa24cb9b21f5e581adaf3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12c593c4e90e676e12c8b505ba4f31b') in 0.029812 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007008 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Thanos\Desktop\UnityProjects\GGJ_2022\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Thanos\Desktop\UnityProjects\GGJ_2022\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1030ms)
+		BeginReloadAssembly (126ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (826ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (237ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (427ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4995 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.7 MB). Loaded Objects now: 5600.
+Memory consumption went from 198.6 MB to 197.9 MB.
+Total: 3.832900 ms (FindLiveObjects: 0.355700 ms CreateObjectMapping: 0.327200 ms MarkObjects: 2.893600 ms  DeleteObjects: 0.255200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006808 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Thanos\Desktop\UnityProjects\GGJ_2022\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Thanos\Desktop\UnityProjects\GGJ_2022\Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.048 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1049ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (848ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (235ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (455ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (296ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4995 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (0.7 MB). Loaded Objects now: 5602.
+Memory consumption went from 198.6 MB to 197.9 MB.
+Total: 3.849400 ms (FindLiveObjects: 0.386900 ms CreateObjectMapping: 0.238700 ms MarkObjects: 2.925600 ms  DeleteObjects: 0.297200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 417.380358 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Laptop_Brush Keyboard_12.wav
+  artifactKey: Guid(92f3c515d69bb401796ca7ecf47f1e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Laptop_Brush Keyboard_12.wav using Guid(92f3c515d69bb401796ca7ecf47f1e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41dbffa6927228ca12490acb82feeda8') in 0.056214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Laptop_Spacebar_06.wav
+  artifactKey: Guid(e00797bb3cdc1424bb8cc457a6a0e458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Laptop_Spacebar_06.wav using Guid(e00797bb3cdc1424bb8cc457a6a0e458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a07fc798a434e1bbb5f9ee845a5d17e') in 0.017060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Laptop_Keystroke_82.wav
+  artifactKey: Guid(84057f1e80d924eb6a5d471d6fb37083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Laptop_Keystroke_82.wav using Guid(84057f1e80d924eb6a5d471d6fb37083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f06dd4bf10cd5adfdd33f3ad28a995') in 0.016151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Tablet_Typing_01.wav
+  artifactKey: Guid(02198be90cccd4192b88e662ca1bf146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Tablet_Typing_01.wav using Guid(02198be90cccd4192b88e662ca1bf146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a86a7f5fa3dcd2bdc3e8bec07f44da') in 0.016447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Tablet_Tap_07.wav
+  artifactKey: Guid(def7ac2b4d45d4c2c8609106f50c3913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/Tablet_Tap_07.wav using Guid(def7ac2b4d45d4c2c8609106f50c3913) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b50b8ea70fc87d25816bcd0cfcce1fa') in 0.018452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/PC Keyboard_Keystroke_28.wav
+  artifactKey: Guid(0174ef91f20e54e9283ea94e619f46f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shapeforms Audio Free Sound Effects/Type Preview/AUDIO/PC Keyboard_Keystroke_28.wav using Guid(0174ef91f20e54e9283ea94e619f46f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3632e45a2a6f903ae06cdf4463eee253') in 0.017938 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

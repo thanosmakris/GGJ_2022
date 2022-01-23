@@ -9,5 +9,17 @@ public enum State
 
 public class Player : MonoBehaviour
 {
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.transform.CompareTag("Enemy"))
+        {
+            Death();
+        }
+    }
+
+    void Death()
+    {
+
+    }
     
 }

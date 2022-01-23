@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public AudioManager audioManager;
     public Gauge gauge;
     public GameObject weaponPrefab;
     public GameObject bulletPrefab;
@@ -60,6 +61,7 @@ public class PlayerShooting : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
 
+            audioManager.PlayFireSound(currentState);
             GameObject newBullet = Instantiate(bulletPrefab, activeHand.pos.position, Quaternion.identity);
             int randomNum = Random.Range(0,2);
             
