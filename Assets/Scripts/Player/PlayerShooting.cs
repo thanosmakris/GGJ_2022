@@ -13,6 +13,8 @@ public class PlayerShooting : MonoBehaviour
     public PlayerHand happyHand = new PlayerHand();
     public PlayerHand angryHand = new PlayerHand();
 
+    State currentState;
+
 
     private void OnEnable() {
         slotsQueue.Enqueue(happyHand);
@@ -24,6 +26,8 @@ public class PlayerShooting : MonoBehaviour
     {
         activeHand = slotsQueue.Dequeue();
         slotsQueue.Enqueue(activeHand);
+
+        
 
         GameObject weaponInstance = Instantiate(weaponPrefab, activeHand.pos.position, Quaternion.identity);
         weaponTransform = weaponInstance.transform;
@@ -46,6 +50,8 @@ public class PlayerShooting : MonoBehaviour
             slotsQueue.Enqueue(activeHand);
             weaponTransform.position = activeHand.pos.position;
             weaponTransform.parent = activeHand.pos;
+            currentState = activeHand.state;
+            GameEvents.onStateChanged?.Invoke(currentState);
         }
     }
 
@@ -56,11 +62,9 @@ public class PlayerShooting : MonoBehaviour
 
             GameObject newBullet = Instantiate(bulletPrefab, activeHand.pos.position, Quaternion.identity);
             int randomNum = Random.Range(0,2);
-            State newState = activeHand.state;
-            GameEvents.onStateChanged?.Invoke(newState);
             
-            newBullet.GetComponent<Bullet>().SetupBullet(newState, activeHand.pos.forward);
-            gauge.HandleShoot(newState);
+            newBullet.GetComponent<Bullet>().SetupBullet(currentState, activeHand.pos.forward);
+            gauge.HandleShoot(currentState);
         }
     }
 }
