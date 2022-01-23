@@ -27,4 +27,7 @@ public class GameManager : MonoBehaviour
             return randomNumber == 0 ? happyPlayer : angryPlayer;
         }
     }
+
+
+
 }

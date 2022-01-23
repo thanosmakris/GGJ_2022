@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public Gauge gauge;
     public GameObject weaponPrefab;
     public GameObject bulletPrefab;
     Transform weaponTransform;
@@ -56,7 +57,10 @@ public class PlayerShooting : MonoBehaviour
             GameObject newBullet = Instantiate(bulletPrefab, activeHand.pos.position, Quaternion.identity);
             int randomNum = Random.Range(0,2);
             State newState = activeHand.state;
+            GameEvents.onStateChanged?.Invoke(newState);
+            
             newBullet.GetComponent<Bullet>().SetupBullet(newState, activeHand.pos.forward);
+            gauge.HandleShoot(newState);
         }
     }
 }
