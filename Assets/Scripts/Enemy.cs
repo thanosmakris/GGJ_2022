@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour
     Transform target;
     State enemyType;
 
+    public GameObject enemyModel1, enemyModel2;
+
 
     private void OnEnable() {
         target = GameManager.Instance.GetRandomPlayer;
@@ -25,17 +27,19 @@ public class Enemy : MonoBehaviour
     {
         if (enemyType == State.Happy)
         {
-            GetComponent<MeshRenderer>().material.SetFloat("_T", 0f);
+            enemyModel1.SetActive(false);
         }
         else
         {
-            GetComponent<MeshRenderer>().material.SetFloat("_T", 1f);
+            enemyModel2.SetActive(false);
         }
     }
 
     private void Update() {
         if (target != null)
-        transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, Time.deltaTime * speed);
+        }
     }
 
     public void HandleBulletCollision(State bulletType)

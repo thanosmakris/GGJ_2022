@@ -20,12 +20,12 @@ public class Gauge : MonoBehaviour
     {
         if (state == State.Happy)
         {
-            gaugeValue -= 0.03f;
+            gaugeValue -= 0.025f;
             gaugeValue = Mathf.Clamp01(gaugeValue);
         }
         else if(state == State.Angry)
         {
-            gaugeValue += 0.03f;
+            gaugeValue += 0.025f;
             gaugeValue = Mathf.Clamp01(gaugeValue);
         }
         gauge.value = gaugeValue;
